@@ -1,0 +1,36 @@
+GET  http://localhost:5008/games
+
+
+###
+GET  http://localhost:5008/games/2
+
+
+###
+POST  http://localhost:5008/games
+Content-Type: application/json
+
+{
+    "name": "Crimson desert",
+    "genreId": 2,
+    "price": 40.99,
+    "releaseDate": "2026-03-03"
+}
+
+###
+PUT  http://localhost:5008/games/2
+Content-Type: application/json
+
+{
+    "name": "Crimson desert",
+    "genreId": 1,
+
+    "price": 40.99,
+    "releaseDate": "2026-03-04"
+}
+
+
+###
+DELETE  http://localhost:5008/games/1
+
+###
+GET  http://localhost:5008/genres
